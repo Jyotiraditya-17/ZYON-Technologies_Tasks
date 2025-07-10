@@ -18,10 +18,26 @@ export default function Home() {
 
   return (
     <Layout className="h-screen text-center">
-      <Header className="bg-blue-500 text-white text-xl">Admin Portal</Header>
+
+      <div className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white text-4xl font-bold py-6 shadow-lg tracking-wide">
+         Admin Portal Dashboard
+      </div>
+
       <Content className="flex flex-col justify-center items-center gap-4">
         <Title>Welcome to Admin Dashboard</Title>
-        <Button type="primary" onClick={login}>Login with Google</Button>
+        <p className="text-gray-400 text-base max-w-xl">
+          Manage your employees securely with modern tools and a sleek interface.
+        </p>
+
+        <Button
+          type="primary"
+          size="large"
+          className="bg-purple-700 hover:bg-purple-800 text-white border-none transform hover:scale-105 transition-all duration-300 shadow-md hover:shadow-purple-700/50"
+          onClick={login}
+        >
+          Sign in with Google
+        </Button>    
+          
       </Content>
     </Layout>
   );

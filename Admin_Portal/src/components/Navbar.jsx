@@ -1,6 +1,7 @@
 // File: src/components/Navbar.jsx
 import { useEffect, useState } from 'react';
 import { Button, Space, Switch, Dropdown, Menu } from 'antd';
+import { MoonOutlined, SunOutlined } from "@ant-design/icons";
 import { useAuth } from '../context/authContext';
 import { useNavigate } from 'react-router-dom';
 
@@ -27,8 +28,9 @@ const Navbar = ({ setThemeMode }) => {
     <div className="flex justify-between items-center p-4 shadow-md bg-white dark:bg-gray-800">
       <div className="text-xl font-bold text-black dark:text-white">Admin Portal</div>
       <Space>
-        <span className="text-black dark:text-white">Dark Mode</span>
+        <SunOutlined className='text-white'/>
         <Switch checked={theme === 'dark'} onChange={toggleTheme} />
+        <MoonOutlined className='text-white'/>
         {user && (
           <>
             <Dropdown

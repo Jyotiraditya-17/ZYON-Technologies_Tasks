@@ -1,0 +1,14 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 24 24"
+  aria-hidden="true"
+>
+  <!-- Top-left square: A deep blue -->
+  <path d="M4 4h6v6H4V4z" fill="#3B82F6" />
+  <!-- Bottom-left square: A vibrant green -->
+  <path d="M4 14h6v6H4v-6z" fill="#10B981" />
+  <!-- Top-right square: A warm orange -->
+  <path d="M14 4h6v6h-6V4z" fill="#F59E0B" />
+  <!-- Bottom-right square: A rich purple -->
+  <path d="M14 14h6v6h-6v-6z" fill="#8B5CF6" />
+</svg>
